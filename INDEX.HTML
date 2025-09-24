@@ -71,6 +71,7 @@
         <li>Milk</li>
     </ol>
     <!-- description list -->
+    <!-- not much used -->
     <dl>
         <dt>Coffee</dt>
         <dd>Black hot drink</dd>
@@ -80,7 +81,8 @@
         <dd>White cold drink</dd>
     </dl>
     <!-- tables -->
-    <table border="1">
+    <table border="1" width="500px" align="center" cellpadding="10" cellspacing="5">
+        <!-- border is used to give border to the table -->
         <!-- th is used to define table heading and td is used for the remaining body parts -->
         <tr>
             <th>Firstname</th>
@@ -109,6 +111,7 @@
         </tr>
     </table>
     <!-- rowspanned -->
+    <!-- It is used to join 2 or more rows -->
     <table border="5">
         <tr>
             <th>name</th>
@@ -132,6 +135,7 @@
         </tr>
     </table>
     <!-- colspanned -->
+    <!-- It is used to join 2 or more columns -->
      <table border="3">
         <tr>
             <th colspan="2">name/item</th>
@@ -152,6 +156,65 @@
             <td>650</td>
         </tr>
      </table>
+     <br><br>
+    <!-- forms -->
+    <!-- method attrbute hv get,put,post and delete named entries which perform CRUD  operations -->
+    <!--POST IS USED TO STORE SIGN UP DATA IN DATABASES(CREATE)  -->
+    <!--GET IS USED TO FETCH DATA FROM DATABASES (READ) -->
+    <!-- PUT IS USED TO UPDATE DATA IN THE DATABASES(UPDATE) -->
+    <!-- DELETE IS USED TO DELETE DATA FROM THE DATABASES(DELETE) -->
+    <!-- action attribute is used to specify the file in which the form data is to be sent -->
+    <form >
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email">
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password">
+        <br><br>
+        <label for="mobile">Mobile</label>
+        <input type="number" id="mobile">
+        <br><br>
+        <label for="dob">DOB</label>
+        <input type="date" id="dob">
+        <br><br>
+        <label for="favcolor">Fav Color</label>
+        <input type="color" id="favcolor">
+        <br><br>
+
+        <label for="gender">Gender:</label>
+        <label >
+            <input type="radio" name="gender">Male
+        </label>
+        <label >
+            <input type="radio" name="gender">Female
+        </label>
+        <label >
+            <input type="radio" name="gender">Other
+        </label>
+        <br><br>
+
+        <label >
+            <input type="checkbox">I agree to the terms and conditions
+        </label>
+
+        <label for="photo">upload your photo</label>
+        <input type="file" id="photo" accept="photo/*" multiple>
+        <br><br>
+
+        <input type="submit" name="" id="" value="submit">
+        <br><br>
+
+        <input type="reset" value="reset">
+        <br><br>
+
+        <button type="submit">
+            submit via button
+        </button>
+
+    </form>      
 </body>
 
 </html>
